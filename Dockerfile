@@ -1,6 +1,6 @@
-FROM ubuntu
+FROM python
 
-RUN  apt-get update && apt-get install -y  apache2 python3 net-tools
+RUN  apt-get update && apt-get install -y python-pip
 
 ADD app1 /root
-RUN chown root:root /root/app1
+
